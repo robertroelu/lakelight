@@ -2,7 +2,7 @@
 import { linkblockedit } from '@finsweet/attributes-linkblockedit';
 // import { } from '@finsweet/attributes-cmssort/'
 import { cmsfilter } from '@finsweet/attributes-cmsfilter';
-// import { } from '@finsweet/attributes-scrolldisable/'
+import { scrolldisable } from '@finsweet/attributes-scrolldisable/';
 import { cmsload } from '@finsweet/attributes-cmsload/';
 // import { } from '@finsweet/attributes-socialshare/'
 
@@ -33,6 +33,7 @@ window.Webflow.push(() => {
   // nestedElement();
   linkblockedit();
   cmsload();
+  scrolldisable();
   // modal();
   swipers();
 
