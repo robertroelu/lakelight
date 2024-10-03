@@ -4,22 +4,22 @@ export const breadCrumb = () => {
   const text = textEl.textContent?.toLowerCase();
 
   if (text === 'articles') {
-    textEl.setAttribute('href', 'https://lakelight-dev.webflow.io/read/articles');
+    textEl.setAttribute('href', '/read/articles');
   }
 
   if (text === 'goodreads') {
-    textEl.setAttribute('href', 'https://lakelight-dev.webflow.io/read/good-reads');
+    textEl.setAttribute('href', '/read/good-reads');
   }
 
   if (text === 'goodfinds') {
-    textEl.setAttribute('href', 'https://lakelight-dev.webflow.io/read/good-finds');
+    textEl.setAttribute('href', '/read/good-finds');
   }
 
-  if (text === 'presson') {
-    textEl.setAttribute('href', 'https://lakelight-dev.webflow.io/listen/presson');
+  if (text === 'beneath the headlines') {
+    textEl.setAttribute('href', '/listen/beneath-the-headlines');
   }
 
-  if (text === 'docpod') {
-    textEl.setAttribute('href', 'https://lakelight-dev.webflow.io/listen/docpod');
+  if (text === 'on good work') {
+    textEl.setAttribute('href', '/listen/on-good-work');
   }
 };
