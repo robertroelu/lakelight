@@ -10,7 +10,7 @@ import { cmsload } from '@finsweet/attributes-cmsload/';
 // import { modal } from '$modal/modal';
 
 //Nest
-// import { nestedElement } from './nest/nestElement';
+import { nestedElement } from './nest/nestElement';
 
 //Utils
 import { swipers } from '$utils/swipers';
@@ -36,10 +36,19 @@ window.Webflow.push(() => {
   scrolldisable();
   // modal();
   swipers();
-
-  searchLoad();
-  cmsfilter();
-  searchFind();
+  nestedElement()
+    .then(() => {
+      searchLoad();
+      cmsfilter();
+      hoverAnimation();
+      searchFind();
+    })
+    .catch((error) => {
+      console.error('Error in nestedElement:', error);
+    });
+  // searchLoad();
+  // cmsfilter();
+  // searchFind();
 
   socialShare();
 
