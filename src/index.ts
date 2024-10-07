@@ -7,7 +7,7 @@ import { cmsload } from '@finsweet/attributes-cmsload/';
 // import { } from '@finsweet/attributes-socialshare/'
 
 //Modal
-// import { modal } from '$modal/modal';
+import { modal } from '$modal/modal';
 
 //Nest
 import { nestedElement } from './nest/nestElement';
@@ -34,7 +34,7 @@ window.Webflow.push(() => {
   linkblockedit();
   cmsload();
   scrolldisable();
-  // modal();
+  modal();
   swipers();
   nestedElement()
     .then(() => {
