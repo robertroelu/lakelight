@@ -34,7 +34,6 @@ window.Webflow.push(() => {
   linkblockedit();
   cmsload();
   scrolldisable();
-  modal();
   swipers();
   nestedElement()
     .then(() => {
@@ -62,4 +61,6 @@ window.Webflow.push(() => {
 
   hoverAnimation();
   // typer();
+
+  modal();
 });
