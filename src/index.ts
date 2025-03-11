@@ -22,6 +22,8 @@ import { speakersLoad } from '$utils/speakersLoad';
 import { scrollAnimation } from '$utils/scrollAnimation';
 import { backStep } from '$utils/backStep';
 import { hoverAnimation } from '$utils/hoverAnimation';
+import { createdBy } from '$utils/createdBy';
+import { newsPopup } from '$utils/newsPopup';
 // import { consoleClear } from '$utils/consoleClear';
 // import { actualyear } from '$utils/actualYear';
 // import { typer } from '$utils/typer';
@@ -63,4 +65,8 @@ window.Webflow.push(() => {
   // typer();
 
   modal();
+
+  createdBy();
+
+  newsPopup();
 });
